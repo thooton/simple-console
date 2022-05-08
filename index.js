@@ -14,9 +14,10 @@ submit.onclick = function() {
             evaluation = evaluation.toString();
         }
     } catch (e) {
-        
+
     }
     append_output(evaluation);
+    input.value = "";
 };
 
 function append_output(text) {
