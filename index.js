@@ -9,6 +9,9 @@ submit.onclick = function() {
     } catch (e) {
         evaluation = e;
     }
+    if (evaluation.toString !== undefined) {
+        evaluation = evaluation.toString();
+    }
     append_output(evaluation);
 };
 
